@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!--Cabeçalho-->
+  	<meta name="author" content="Felipe Alves">
+    <meta charset='utf-8'>
+    <title>Formulário</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+  		$("#hide").click(function(){
+    	$("p").hide();
+ 	 });
+  		$("#show").click(function(){
+    	$("p").show();
+  	});
+	});
+</script>
+
+</head>
+
+<body bgcolor="#F5F5F5">
+    
+    <center>
+        <img src="img3/img3.png" alt="banner do site" width="1250" height="400" />
+    </center>
+    
+
+    <center>
+        <font face="Bookman Old Style">
+            <h1>Formulário</h1>
+        </font>
+    </center>
+
+    <br>
+
+    <font size="5" face="Bookman Old Style">
+    <form name="" method="" action=""> <!--so para lembrar as forma de envio-->
+        <p>
+            <label for="nome">Nome:</label>
+            <input id="nome" type="text" name="nome" size="52" maxlength="50" required autofocus>
+            
+            <br>
+            <br>
+
+            <label for="celular">Telefone:</label >
+            <input id="celular" type="text" name="celular" size="22" maxlength="20" required autofocus>
+            <br>
+            <br>
+
+            <label for="categoria">Como nos conheceu:</label>
+            <select name="categoria" id="categoria">
+                <option>select</option>
+                <option value="noticia"> Tv </option>
+                <option value="promocao"> Internet </option>
+                <option value="receita"> outros </option>
+            </select>
+
+            <br>
+            <p>Possui rede social?</p>
+
+            <p>
+            <select>
+                <option>Sim</option>
+                <option>Facebook</option>
+                <option>Linkedin</option>
+                <option>Instagram</option>
+	        </select>
+			<button id="show">Não</button>
+           </p>
+
+            <input type="submit" name="bt-cadastrar" value="ENVIAR">
+            <input type="reset" name="bt-cancelar" value="CANCELAR">
+    </form>
+    </font>
+</body>
+
+</html>
